@@ -1,11 +1,13 @@
 <?php
 
 use App\Livewire\HomePage;
+use App\Livewire\PastPapers;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 Route::get('/',HomePage::class)->name('home');
+Route::get('/past-papers',PastPapers::class)->name('past-papers');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
