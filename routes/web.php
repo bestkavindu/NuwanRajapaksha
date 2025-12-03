@@ -1,13 +1,19 @@
 <?php
 
 use App\Livewire\HomePage;
+use App\Livewire\OnlineClass;
 use App\Livewire\PastPapers;
+use App\Livewire\PhysicalClass;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 Route::get('/',HomePage::class)->name('home');
 Route::get('/past-papers',PastPapers::class)->name('past-papers');
+
+Route::get('/classes/online',OnlineClass::class)->name('online-class');
+Route::get('/classes/physical',PhysicalClass::class)->name('physical-class');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
