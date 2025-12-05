@@ -134,7 +134,7 @@
                 <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <!-- Step 1 -->
                 <div class="text-center">
                     <div class="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">1</div>
@@ -155,6 +155,16 @@
                     <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">පන්ති ආරම්භ කරන්න</h3>
                     <p class="text-slate-600 dark:text-slate-300">නියමිත වේලාවට පන්තියට සම්බන්ධ වී ඔබේ අධ්‍යයන ගමන ආරම්භ කරන්න.</p>
                 </div>
+            </div>
+
+            <!-- Registration Button -->
+            <div class="text-center mt-12">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDqfR0dq5cTpbdjzrYKp8wArR1jVy5uOkEHd_eAXevvy6PTA/viewform" target="_blank" class="inline-flex items-center justify-center px-12 py-5 text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:scale-105 shadow-2xl">
+                    <svg class="w-7 h-7 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                    </svg>
+                    දැන් ලියාපදිංචි වන්න
+                </a>
             </div>
         </div>
     </section>
