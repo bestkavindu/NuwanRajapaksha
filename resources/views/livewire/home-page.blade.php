@@ -186,7 +186,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Gallery Item 1 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1577896334614-5d85d01d621d?q=80&w=800&auto=format&fit=crop"
+                    <img src="images/banner-1.jpg"
                         alt="Classroom"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
@@ -197,7 +197,7 @@
 
                 <!-- Gallery Item 2 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1427504746696-ea5abd73e3f2?q=80&w=800&auto=format&fit=crop"
+                    <img src="images/banner-2.jpg"
                         alt="Students"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
@@ -208,7 +208,7 @@
 
                 <!-- Gallery Item 3 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop"
+                    <img src="images/banner-3.jpg"
                         alt="Teaching"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
@@ -219,7 +219,7 @@
 
                 <!-- Gallery Item 4 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=800&auto=format&fit=crop"
+                    <img src="images/banner-4.jpg"
                         alt="Education"
                         class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
                     <div
