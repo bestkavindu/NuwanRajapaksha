@@ -183,70 +183,106 @@
                     Combined Maths.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" x-data="{ selectedImage: null, selectedTitle: null }">
                 <!-- Gallery Item 1 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
+                <div @click="selectedImage = 'images/banner-1.jpg'; selectedTitle = 'Theory Class'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <img src="images/banner-1.jpg"
                         alt="Classroom"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">Theory Class</span>
                     </div>
                 </div>
 
                 <!-- Gallery Item 2 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
+                <div @click="selectedImage = 'images/banner-2.jpg'; selectedTitle = 'Group Study'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <img src="images/banner-2.jpg"
                         alt="Students"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">Group Study</span>
                     </div>
                 </div>
 
                 <!-- Gallery Item 3 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
+                <div @click="selectedImage = 'images/banner-3.jpg'; selectedTitle = 'Paper Discussion'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <img src="images/banner-3.jpg"
                         alt="Teaching"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">Paper Discussion</span>
                     </div>
                 </div>
 
                 <!-- Gallery Item 4 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
+                <div @click="selectedImage = 'images/banner-4.jpg'; selectedTitle = 'Revision'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <img src="images/banner-4.jpg"
                         alt="Education"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">Revision</span>
                     </div>
                 </div>
 
                 <!-- Gallery Item 5 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
+                <div @click="selectedImage = 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop'; selectedTitle = 'Awards'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
                         alt="Success"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">Awards</span>
                     </div>
                 </div>
 
                 <!-- Gallery Item 6 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/3] cursor-pointer">
+                <div @click="selectedImage = 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop'; selectedTitle = 'Events'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
                     <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop"
                         alt="Community"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                        class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
                     <div
                         class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">Events</span>
+                    </div>
+                </div>
+
+                <!-- Image Modal -->
+                <div x-show="selectedImage"
+                     x-cloak
+                     @click="selectedImage = null"
+                     x-transition:enter="transition ease-out duration-300"
+                     x-transition:enter-start="opacity-0"
+                     x-transition:enter-end="opacity-100"
+                     x-transition:leave="transition ease-in duration-200"
+                     x-transition:leave-start="opacity-100"
+                     x-transition:leave-end="opacity-0"
+                     class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+                     style="display: none;">
+
+                    <!-- Close Button -->
+                    <button @click.stop="selectedImage = null"
+                            class="absolute top-4 right-4 text-white/80 hover:text-white bg-white/10 hover:bg-white/20 rounded-full p-3 transition-all z-10">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <!-- Image Container -->
+                    <div @click.stop class="relative max-w-7xl max-h-[90vh] w-full">
+                        <img :src="selectedImage"
+                             :alt="selectedTitle"
+                             class="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-2xl"
+                             x-transition:enter="transition ease-out duration-300 delay-100"
+                             x-transition:enter-start="opacity-0 scale-95"
+                             x-transition:enter-end="opacity-100 scale-100">
+
+                        <!-- Image Title -->
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
+                            <h3 x-text="selectedTitle" class="text-white text-2xl font-bold text-center"></h3>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Hint -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 text-sm">
+                        Click anywhere to close
                     </div>
                 </div>
             </div>
