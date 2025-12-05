@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\ContactUs;
 use App\Livewire\HomePage;
 use App\Livewire\OnlineClass;
 use App\Livewire\PastPapers;
@@ -13,6 +14,8 @@ Route::get('/past-papers',PastPapers::class)->name('past-papers');
 
 Route::get('/classes/online',OnlineClass::class)->name('online-class');
 Route::get('/classes/physical',PhysicalClass::class)->name('physical-class');
+
+Route::get('/contact',ContactUs::class)->name('contact');
 
 
 Route::view('dashboard', 'dashboard')
