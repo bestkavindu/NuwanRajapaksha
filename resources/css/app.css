@@ -64,3 +64,16 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+    @keyframes progress-bar {
+        0% { width: 0%; }
+        100% { width: 100%; }
+    }
+    .animate-progress-bar {
+        animation: progress-bar 2s ease-in-out infinite;
+    }
+    .delay-500 {
+        animation-delay: 0.5s;
+    }
+    .delay-1000 {
+        animation-delay: 1s;
+    }

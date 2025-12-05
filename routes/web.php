@@ -5,6 +5,7 @@ use App\Livewire\HomePage;
 use App\Livewire\OnlineClass;
 use App\Livewire\PastPapers;
 use App\Livewire\PhysicalClass;
+use App\Livewire\Practice;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
@@ -16,6 +17,7 @@ Route::get('/classes/online',OnlineClass::class)->name('online-class');
 Route::get('/classes/physical',PhysicalClass::class)->name('physical-class');
 
 Route::get('/contact',ContactUs::class)->name('contact');
+Route::get('/practice',Practice::class)->name('practice');
 
 
 Route::view('dashboard', 'dashboard')
