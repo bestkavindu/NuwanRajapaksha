@@ -215,8 +215,8 @@
                 </div>
 
                 <!-- Gallery Item 4 -->
-                <div @click="selectedImage = 'images/banner-4.jpg'; selectedTitle = 'Revision'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-                    <img src="images/banner-4.jpg"
+                <div @click="selectedImage = '{{ asset('images/banner-4.jpg') }}'; selectedTitle = 'Revision'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                    <img src="{{ asset('images/banner-4.jpg') }}"
                         alt="Education"
                         class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
                     <div
@@ -224,25 +224,6 @@
                     </div>
                 </div>
 
-                <!-- Gallery Item 5 -->
-                <div @click="selectedImage = 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop'; selectedTitle = 'Awards'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
-                        alt="Success"
-                        class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
-                    <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                    </div>
-                </div>
-
-                <!-- Gallery Item 6 -->
-                <div @click="selectedImage = 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop'; selectedTitle = 'Events'" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop"
-                        alt="Community"
-                        class="w-full h-auto object-contain transform group-hover:scale-105 transition duration-500">
-                    <div
-                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                    </div>
-                </div>
 
                 <!-- Image Modal -->
                 <div x-show="selectedImage"
