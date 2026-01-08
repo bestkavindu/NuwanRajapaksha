@@ -165,7 +165,7 @@
                     </div>
                     <div
                         class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-700">
-                        <img src="{{ assets('storage/images/nuwan-rajapaksha.jpg') }}" alt="Nuwan Rajapaksha"
+                        <img src="{{ asset('storage/images/nuwan-rajapaksha.jpg') }}" alt="Nuwan Rajapaksha"
                             class="w-full h-auto object-cover transform hover:scale-105 transition duration-500">
                     </div>
                 </div>
