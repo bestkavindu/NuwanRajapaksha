@@ -165,7 +165,7 @@
                     </div>
                     <div
                         class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-700">
-                        <img src="https://placehold.co/600x700/e2e8f0/1e293b?text=Teacher+Image" alt="Ruwan Darshana"
+                        <img src="images/nuwan-rajapaksha.jpg" alt="Ruwan Darshana"
                             class="w-full h-auto object-cover transform hover:scale-105 transition duration-500">
                     </div>
                 </div>
