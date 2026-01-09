@@ -26,8 +26,7 @@ class PastPapersForm
                 FileUpload::make('file')
                     ->label('File')
                     ->required()
-                    ->disk('public')
-                    ->maxLength(255),
-            ]);
+                    ->disk('public'),
+            ])->columns(1);
     }
 }
